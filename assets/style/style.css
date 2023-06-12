@@ -19,9 +19,7 @@ footer{
     min-height:11vh ;
     width: 100%;
 }
-#carouselExampleControlsNoTouching{
-    font-size: 1.8rem;
-}
+
 #nav-bar{
     margin-top:0.7rem;
 }
@@ -85,11 +83,17 @@ footer{
     margin-bottom: 2rem;
 }
 .card-img-top{
- height: 10rem;
+ height: 12rem;
+ object-fit: cover;
+}
+
+.cards-css1{
+    background-color: #bbbbbb !important;
+    
 }
 .cards-css1:hover{
-    box-shadow: 0 0 4rem #a200ffe5 !important;
-    background: rgb(0, 177, 80)
+    box-shadow: 0 0 4rem #383838e5 !important;
+    background: rgba(173, 173, 173, 0.979)
 }
 
 .png1{
@@ -173,6 +177,40 @@ th{
 margin: 0.5rem;
 color: white;
 }
+/* imagenes carrusel */
+#carrousel-img1{
+    min-height: 30vh;
+    background-image:url('https://i.postimg.cc/KvsSK8cj/Electronic-Fest.jpg');
+    background-position: bottom ;    
+}
+#carrousel-img2{
+    min-height: 30vh;
+    background-image:url('https://i.postimg.cc/GmHRkbNV/Jurassic-Park.jpg');
+    background-size: cover;
+    background-position: center ;    
+}
+#carrousel-img3{
+    min-height: 30vh;
+    background-image:url('https://i.postimg.cc/RZ9fH4Pr/halloween.jpg');
+    background-size: cover;
+    background-position:center 20% ;    
+}
+#carrousel-img4{
+    min-height: 30vh;
+    background-image:url('../imgs/Books.jpg');
+    background-size: cover;
+    background-position: center ;    
+}
+#checkBoxDiv{
+    margin-top: 1rem;
+}
+#search-input{
+    width: 30vw;
+}
+#checkBoxDiv{
+    margin-left: 1rem;
+}
+
 @media only screen and (min-width: 250px) and (max-width:1150px){
     #card-details{
         margin-top: 2rem;
@@ -201,5 +239,11 @@ color: white;
 .logo{
     width: 17rem;
     margin-top: 1rem;
+}
+#checkBoxDiv{
+    display: flex;
+    flex-direction: column !important ;
+    align-content: center !important;
+    gap: 1 !important;
 }
 }
